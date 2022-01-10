@@ -27,6 +27,7 @@ Stroke prediction data:
 11) smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"*
 12) stroke: 1 if the patient had a stroke or 0 if not
 *Note: "Unknown" in smoking_status means that the information is unavailable for this patient
+
 Source: https://www.kaggle.com/fedesoriano/stroke-prediction-datasetpres
 
 Blood pressure: evolution of blood pressure over time (1975-2015 yearly):
@@ -43,6 +44,7 @@ Blood pressure: evolution of blood pressure over time (1975-2015 yearly):
 11) Prevalence of raised blood pressure
 12) Prevalence of raised blood pressure lower 95% uncertainty interval
 13) Prevalence of raised blood pressure upper 95% uncertainty interval
+
 Source -Country specific data for all counties and global data-: https://ncdrisc.org/data-downloads-blood-pressure.html
 
 Hypertension per age and sex per 1000 people in the Netherlands 2020:
@@ -50,6 +52,7 @@ Hypertension per age and sex per 1000 people in the Netherlands 2020:
 2) Man
 3) Vrouw
 4) Totaal
+
 Source: https://www.volksgezondheidenzorg.info/onderwerp/bloeddruk/cijfers-context/huidige-situatie#:~:text=Ongeveer%202%2C8%20miljoen%20Nederlanders,gedurende%20een%20bepaald%20jaar. (Government reference data)
 
 
