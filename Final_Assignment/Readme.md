@@ -12,9 +12,8 @@ High blood pressure (hypertension) is a common condition in which the long-term 
 
 ### Data description
 
-The different columns of the table are described in the documentation directory [here](/documentation/data_table_documentation.md)
 
-Stroke prediction data (Data contains 5110 attributes and 12 rows):
+Stroke prediction data:
 1) id: unique identifier
 2) gender: "Male", "Female" or "Other"
 3) age: age of the patient
