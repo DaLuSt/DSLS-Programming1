@@ -111,7 +111,7 @@ How to run the code?
 | [hvplot](https://hvplot.holoviz.org/)  | `0.7.3`  |
 | [scipy](https://scipy.org/)            | `1.7.1`  |
 | [jupyter](https://jupyter.org/)        | `1.0.0`  |
-| [Panel](http://panel.org/)
+| [Panel](http://https://panel.org/)     |`0.12.6`  |
 
 
 ## Acknowledgements
@@ -129,5 +129,6 @@ This project contains a MIT [license](./LICENSE.md)
 
 * ***[1]***: The pandas development team, **pandas-dev/pandas: Pandas**, feb, 2020, Zenodo, latest, [10.5281/zenodo.3509134](https://doi.org/10.5281/zenodo.3509134)
 * ***[2]***: Bokeh Development Team, **Bokeh: Python library for interactive visualization**, 2018, [https://bokeh.pydata.org/en/latest/](https://bokeh.pydata.org/en/latest/)
-* ***[3]***: HoloViz, **Panel: A high level app and dashboarding solution for Python**, 24, 8, 2018, panel.holoviz.org, 0.12.1, [http://panel.holoviz.org](http://panel.holoviz.org) 
+* ***[3]***: HoloViz, **Panel: A high level app and dashboarding solution for Python**, 24, 8, 2018, panel.holoviz.org, 0.12.1, [http://panel.holoviz.org]
+*(http://panel.holoviz.org) 
 
