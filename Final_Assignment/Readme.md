@@ -7,21 +7,52 @@ A case study about the effect of hypertention in society
 This repository contains the code for the final assignemtn for programming 1, which shows the result of a study about hypertention in the the world and the Netherlands
 
 ### Data
-The original plan was to create a sort of 'olfactometer' to test the attraction of humans to mosquitoes. The olfactometer contained a box, where the mosquitoes were led loose, and a cylinder which split into two directions, so it was y-shaped. At both ends of these two cylinders a hand could be inserted to test several variables(i.e. lavender oil, cinnamon oil, etc.). The mosquitoes were counted when all of them were at the end of either one of the cylincers. Then, the two cylinders were compared and a conclusion could be drawn. 
+High blood pressure (hypertension) is a common condition in which the long-term force of the blood against your artery walls is high enough that it may eventually cause health problems, such as heart disease. But what parameters influence the occurrence of hypertension. can the area of residence or smoking habits be of influence. How does the Netherlands compare to worldwide hypertension percentages. 
 
-However, the experiments were not actualized because the mosquitoes had died and new mosquitoes could not be aquired in the short timeframe that was left. The solution to this problem was to generate mock data. In order to generate data a model was build which could create a probability that a mosquito would choose to go to the right chamber instead of the left chamber. This model contained several variables, including: if a substance was applied or not, blood type, weight, body temperature and blood glucose level of the individuals that were in the left and right chamber. Assumptions were made about the importance of each variable which was drawn from current literature. 
-
-**Formula**:  
-
-![equation_f](http://www.sciweavers.org/download/Tex2Img_1641568101.jpg)  
-
-![equation_p](http://www.sciweavers.org/download/Tex2Img_1641568268.jpg)
-
-This probability(p) was then used to create a number, using a binomial distribution, which represents the amount of mosquitoes that went to the right chamber.
 
 ### Data description
 
 The different columns of the table are described in the documentation directory [here](/documentation/data_table_documentation.md)
+
+Stroke prediction data (Data contains 5110 attributes and 12 rows):
+1) id: unique identifier
+2) gender: "Male", "Female" or "Other"
+3) age: age of the patient
+4) hypertension: 0 if the patient doesn't have hypertension, 1 if the patient has hypertension
+5) heart_disease: 0 if the patient doesn't have any heart diseases, 1 if the patient has a heart disease
+6) ever_married: "No" or "Yes"
+7) work_type: "children", "Govt_jov", "Never_worked", "Private" or "Self-employed"
+8) Residence_type: "Rural" or "Urban"
+9) avg_glucose_level: average glucose level in blood
+10) bmi: body mass index
+11) smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"*
+12) stroke: 1 if the patient had a stroke or 0 if not
+*Note: "Unknown" in smoking_status means that the information is unavailable for this patient
+Source: https://www.kaggle.com/fedesoriano/stroke-prediction-datasetpres
+
+Blood pressure: evolution of blood pressure over time (1975-2015 yearly):
+1) Country/Region/World
+2) ISO
+3) Sex
+4) Year
+5) Mean systolic blood pressure (mmHg)
+6) Mean systolic blood pressure lower 95% uncertainty interval (mmHg)
+7) Mean systolic blood pressure upper 95% uncertainty interval (mmHg)
+8) Mean diastolic blood pressure (mmHg)
+9) Mean diastolic blood pressure lower 95% uncertainty interval (mmHg)
+10) Mean diastolic blood pressure upper 95% uncertainty interval (mmHg)
+11) Prevalence of raised blood pressure
+12) Prevalence of raised blood pressure lower 95% uncertainty interval
+13) Prevalence of raised blood pressure upper 95% uncertainty interval
+Source -Country specific data for all counties and global data-: https://ncdrisc.org/data-downloads-blood-pressure.html
+
+Hypertension per age and sex per 1000 people in the Netherlands 2020:
+1) Age
+2) Man
+3) Vrouw
+4) Totaal
+Source: https://www.volksgezondheidenzorg.info/onderwerp/bloeddruk/cijfers-context/huidige-situatie#:~:text=Ongeveer%202%2C8%20miljoen%20Nederlanders,gedurende%20een%20bepaald%20jaar. (Government reference data)
+
 
 ## Installation
 * * *
@@ -78,11 +109,12 @@ How to run the code?
 | [hvplot](https://hvplot.holoviz.org/)  | `0.7.3`  |
 | [scipy](https://scipy.org/)            | `1.7.1`  |
 | [jupyter](https://jupyter.org/)        | `1.0.0`  |
+| [Panel](http://panel.org/)
 
 
 ## Acknowledgements
 * * *
-We want to thank two people in particular. First, we want to thank René van Koldam because he helped us tremendously with creating the experimental setup. Second, we want to thank ir. PFA (Pieter) Rouweler for providing us with a batch of mosquito larvae. 
+
 
 
 ## License
