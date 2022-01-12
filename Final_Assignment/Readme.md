@@ -1,6 +1,6 @@
 # Hypertention
 * * *
-A case study about the effect of hypertention in society
+A case study about the effect of hypertention in society Daan Steur
 
 ## Description
 * * *
