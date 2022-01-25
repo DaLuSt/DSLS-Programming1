@@ -91,6 +91,9 @@ pip
 * * *
 How to run the code?
 
+Open the jupyter notebook
+run all code
+
 
 ## Requirements
 * * *
