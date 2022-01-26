@@ -1,0 +1,69 @@
+# dead code
+# stroke['hypertension'] = stroke['hypertension'].replace({1: 'Yes', 0: 'No'})
+# stroke['gender'] = stroke['gender'].replace({'Female': 1, 'Male': 0})
+
+# Load a CSV File from zipped folder from URL into Pandas DataFrame
+# import zipfile as zf
+# zip_url = 'url.zip'
+# zip = zf.ZipFile(zip_url) # having First.csv zipped file.
+# filename= 'filename.csv'
+# df = pd.read_csv(zip.open(filename))
+# df
+
+# Make other plots that visualize the data
+# gridmatrix
+# stroke_matrix = hv.Dataset(stroke_corr)
+# density_grid = gridmatrix(stroke_matrix, diagonal_type=hv.Distribution, chart_type=hv.Bivariate)
+# point_grid = gridmatrix(stroke_matrix, chart_type=hv.Points)
+
+# stroke_matrix = (density_grid * point_grid).opts(
+#     opts.Bivariate(bandwidth=0.5, cmap='Blues'), 
+#     opts.Points(size=2, tools=['box_select']))
+
+
+# nl_female = nl.loc[(nl.Sex == 'Women')].Preval
+# nl_male = nl.loc[(nl.Sex == 'Men')].Preval
+
+# world_female = world.loc[(world.Sex == 'Women')].Preval
+# world_male = world.loc[(world.Sex == 'Men')].Preval
+
+# hypertention = stroke.loc[(stroke.hypertension == 'Yes')]
+# hypertention_no = stroke.loc[(stroke.hypertension == 'No')]
+
+# 3.	Does glucose level, area of residence and gender combined significantly influence hypertension
+# stroke['hypertension'] = stroke['hypertension'].replace({'Yes': 1, 'No': 0})
+# model = ols('hypertension ~ gender + Residence_type + avg_glucose_level + gender:Residence_type:avg_glucose_level', data=stroke).fit()
+# anova_table= sm.stats.anova_lm(model, typ=2)
+
+# alpha= 0.05
+# if anova_table.loc["gender:Residence_type:avg_glucose_level",'PR(>F)'] > alpha:
+# 	print('p= %.3f glucose level and area of residence combined are not significantly diffrent (fail toreject H0)\n' % (anova_table.loc["gender:Residence_type:avg_glucose_level",'PR(>F)']))
+# else:
+# 	print('p= %.3f glucose level and area of residence combined are significantly diffrent (reject H0)\n' % (anova_table.loc["gender:Residence_type:avg_glucose_level",'PR(>F)']))
+
+# anova_table
+
+
+# libraries
+# # stack plot
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+
+
+# nl_men = hypertention_comb.loc[(hypertention_comb.Region == 'Netherlands') & (hypertention_comb.Sex == 'Men') ].Preval
+# nl_women = hypertention_comb.loc[(hypertention_comb.Region == 'Netherlands') & (hypertention_comb.Sex == 'Women') ].Preval
+# world_men = hypertention_comb.loc[(hypertention_comb.Region == 'World') & (hypertention_comb.Sex == 'Men') ].Preval
+# world_women = hypertention_comb.loc[(hypertention_comb.Region == 'World') & (hypertention_comb.Sex == 'Women') ].Preval
+
+ 
+# # Your x and y axis
+# x = hypertention_comb.loc[(hypertention_comb.Region == 'Netherlands')].Year
+# y = [ [nl_men], [nl_women], [world_men], [world_women] ]
+ 
+# # use a known color palette
+# pal = sns.color_palette("Set1")
+# plt.stackplot(x, y, labels=['A','B','C','D'], colors=pal, alpha=0.4 )
+# plt.legend(loc='upper right')
+# plt.show()
+ 
