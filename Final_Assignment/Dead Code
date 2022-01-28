@@ -66,4 +66,48 @@
 # plt.stackplot(x, y, labels=['A','B','C','D'], colors=pal, alpha=0.4 )
 # plt.legend(loc='upper right')
 # plt.show()
+
+
+# # summary with panel
+# from panel.template import DarkTheme
+
+# # panel template body
+# dashboard = pn.template.MaterialTemplate(
+#     title = "Programming 1 Final Assignment: prevalance of hypertention",
+#     header_background = "#8B0000",
+#     logo = "https://cdn.freebiesupply.com/logos/large/2x/hanzehogeschool-logo-png-transparent.png",
+#     sidebar_width = 420,
+#     theme = DarkTheme
+# )
+#  # side bar
+# dashboard.sidebar.append("# Prevalance of hypertention in the Netherlands")
+# dashboard.sidebar.append(pn.layout.Divider(width=300))
+# dashboard.sidebar.append(hypertention_NL)
+# dashboard.sidebar.append(pn.layout.Divider(width=300))
+# dashboard.sidebar.append("# Prevalance of hypertention in the world")
+# dashboard.sidebar.append(pn.layout.Divider(width=300))
+# dashboard.sidebar.append(df)
+
+
+# # main body
+# dashboard.main.append(
+    
+#     pn.Column(
+#               pn.Row("<h2>1. Does area of residence significantly influence the level of hypertension </h2>"),
+#               pn.Row(q1()),
+#               pn.Row("<h2>2. Does glucose level significantly influence hypertension </h2> "),
+#               pn.Row(),
+#               pn.Row("<h2>3. Does glucose level and area of residence combined significantly influence hypertension </h2>"),
+#               pn.Row(),
+#               pn.Row("<h2>4. Does the Netherlands have a significantly different hypertenion prevalance than the sample world population </h2>"),
+#               pn.Row("<h3> PArt I <h3>"),
+#               pn.Row(),
+#               pn.Row("<h3> Part II <h3>"),
+#               pn.Row()
+#               ))
+
+
+
+# # local host show in browser
+# dashboard.show()
  
