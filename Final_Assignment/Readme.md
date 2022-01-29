@@ -1,4 +1,4 @@
-# Prevalance of hypertention from a sample population as compaired to the Netherlands
+# Prevalance of hypertention from a sample population compaired to the Netherlands
 * * *
 A case study about the effect of hypertention in society Daan Steur
 
@@ -89,7 +89,7 @@ pip
 
 ## Getting started
 * * *
-How to run the code?
+To see the results run the Prog1_Final_Assignment.ipynb notebook from top to bottom.
 
 Open the jupyter notebook
 run all code
