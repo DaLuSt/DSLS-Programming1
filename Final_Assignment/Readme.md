@@ -1,4 +1,4 @@
-# Prevalance of hypertention from a sample population as compaired to the Netherlands
+# Prevalance of hypertention from a sample population compaired to the Netherlands
 * * *
 A case study about the effect of hypertention in society Daan Steur
 
