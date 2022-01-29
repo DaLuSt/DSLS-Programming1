@@ -89,7 +89,7 @@ pip
 
 ## Getting started
 * * *
-How to run the code?
+To see the results run the Prog1_Final_Assignment.ipynbnotebook from top to bottom.
 
 Open the jupyter notebook
 run all code
