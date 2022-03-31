@@ -1,4 +1,4 @@
-# DSLS_Programming_1_Assignments
+# DSLS_Programming1
 ## Description
 * * *
 Data science for life science programming 1 Weekly assignments and final assingment
